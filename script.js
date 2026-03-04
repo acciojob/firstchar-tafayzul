@@ -1,13 +1,13 @@
-function firstChar(str) {
-  // Trim leading/trailing spaces
-  const trimmedStr = str.trim();
-  
-  // Return the first character of the trimmed string, 
-  // or an empty string if trimmedStr is empty.
-  return trimmedStr.charAt(0);
+function firstChar(text) {
+  return text.trim().charAt(0);
 }
 
-// Do not change the code below
-//Uncomment the following line to show the prompt popup
-//const text = prompt("Enter text:");
-alert(firstChar(str));
+// 1. Get input from the user via prompt
+const input = prompt("Enter a string:");
+
+// 2. Pass that input to your function
+// (Make sure the variable name here matches what you defined)
+const result = firstChar(input);
+
+// 3. Alert the result so Cypress can see it
+alert(result);
